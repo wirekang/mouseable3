@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: ./scripts/build.sh
         with:
           fetch-depth: 0
+      - run: ./scripts/build.sh
       - uses: actions/setup-node@v3
         with:
           cache: npm
