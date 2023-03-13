@@ -1,4 +1,8 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wirekang/mouseable3"
+  },
   "devDependencies": {
     "@semantic-release/github": "^8.0.7",
     "semantic-release": "^20.1.1"
