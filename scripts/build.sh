@@ -1,4 +1,10 @@
 #!/bin/bash
 
+rm -rf dist
 mkdir -p dist || exit 1
-GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o dist/linux-amd64 cmd/main.go
+cd dist || exit 1
+
+export VERSION="$1"
+export BRANCH="$2"
+cmake .. || exit 1
+make || exit 1
