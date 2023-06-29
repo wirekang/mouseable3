@@ -1,6 +1,9 @@
 const config = {
     repositoryUrl: "https://github.com/wirekang/mouseable3",
-    branches: ["main"],
+    branches: ["main", {
+        name: "dev",
+        prerelease: true,
+    }],
     plugins: [
         '@semantic-release/commit-analyzer',
         '@semantic-release/release-notes-generator',
