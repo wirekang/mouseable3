@@ -11,7 +11,7 @@ int main() {
                                  CopyFromParent, 0, nullptr);
         XMapWindow(d, w);
         XFlush(d);
-        sleep(3);
+        sleep(40);
     }
     return 0;
 }
