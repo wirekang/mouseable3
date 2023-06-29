@@ -5,7 +5,7 @@ const config = {
         '@semantic-release/commit-analyzer',
         '@semantic-release/release-notes-generator',
         ['@semantic-release/github', {
-            assets: ["dist/*"]
+            assets: ["dist/mouseable3*"]
         },
         ],
         ['@semantic-release/exec', {
